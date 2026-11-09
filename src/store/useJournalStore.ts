@@ -50,7 +50,7 @@ export const useJournalStore = create<JournalState>((set, get) => ({
       })
     } catch (error) {
       set({
-        hydrated: true,
+        hydrated: false,
         hydrating: false,
         error:
           error instanceof Error
